@@ -1,7 +1,14 @@
+require 'pry'
+
 def triangle(int)
-  spaces = ' ' * (int - 1)
-  stars = '*' * (int - (int - 1))
-  puts (spaces + stars)
+  i = int
+  while i > 0
+    spaces = ' ' * (i - 1)
+    stars = '*' * (int - spaces.length)
+    # binding.pry
+    puts (spaces + stars)
+    i = i - 1
+  end
 end
 
 triangle(5)
