@@ -3,8 +3,8 @@ def triangle(int)
   while i > 0
     spaces = ' ' * (i - 1)
     stars = '*' * (int - spaces.length)
-    puts (spaces + stars)
-    i = i - 1
+    puts spaces + stars
+    i -= 1
   end
 end
 
